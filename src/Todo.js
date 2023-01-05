@@ -49,8 +49,6 @@ export class Todo extends Component {
                     <ul>
                         {this.state.todoList.map((item,index) => (
                             <li onClick={this.crossedWord} key={index} className="input-container">
-                                <button className="edit btn">Edit</button>
-                                <button className="delete-item btn">Delete</button>
                                 {item}
                             </li>
                         ))}
